@@ -1,6 +1,7 @@
 //Pokemon List//
 
-let pokemonList = [{
+let pokemonList = [
+  {
   name: "Venusaur",
   height: 2,
   weight: 100,
@@ -32,3 +33,9 @@ let pokemonList = [{
   abilities:['blaze', 'solar-power']
 }
 ];
+
+for(let i=0; i < pokemonList.length; i++){
+  if (pokemonList[i].height > 10){
+    document.write(pokemonList[i].name + (height: + pokemonList[i].height) + "Wow, that's a big Pokemon!")
+  }
+}
