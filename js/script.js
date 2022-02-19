@@ -35,22 +35,21 @@ let pokemonRepository = (function(){
   }
 ];
 
-  return {
-    getAll: function(){
+return {
+    getAll:function() {
       return pokemonList;
     },
-    add: function(pokemon){
+    add:function(pokemon){
       pokemonList.push(pokemon);
     }
-  };
-
+    };
 })();
 
 
 
 console.log(pokemonRepository.getAll());
-pokemonRepository.add({name: "Pikachu"});
-console.log(pokemonRepository.getAll())
+pokemonRepository.add({ name: 'Pikachu' });
+console.log(pokemonRepository.getAll());
 
 // //Pokemon List Variables//
 // let pokemonList = [
