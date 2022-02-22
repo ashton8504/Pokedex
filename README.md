@@ -1,1 +1,1 @@
-# test-app
+# A Pokedex for Gen 1 Pokemon
