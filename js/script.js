@@ -1,4 +1,14 @@
+function showModal() {
+  let modalContainer = document.querySelector('#modal-container');
+  modalContainer.classList.add('is-visible');
+}
 
+document.querySelector('#show-modal').addEventListener('click', () => {
+  showModal();
+});
+
+
+//adding code above to add to bottom section, trying to figure this out : )
 
 let pokemonRepository = (function () {
   let pokemonList = [];
@@ -11,7 +21,7 @@ let pokemonRepository = (function () {
     ) {
       pokemonList.push(pokemon);
     } else {
-      console.log("pokemon is not correct");
+      console.log("Pokemon is not correct");
     }
   }
   function getAll() {
@@ -63,8 +73,8 @@ let pokemonRepository = (function () {
   }
 
   function showDetails(item) {
-    pokemonRepository.loadDetails(item).then(function () {
-      console.log(item);
+    loadDetails(item).then(function () {
+      showModal(item);
     });
   }
 
