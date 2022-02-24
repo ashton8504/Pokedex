@@ -78,10 +78,10 @@ let pokemonRepository = (function() {
   closeButtonElement.innerText = 'Close';
   closeButtonElement.addEventListener('click', hideModal);
 
-  let titleElement = document.createElement('h1');
+  let titleElement = document.createElement('name');
   titleElement.innerText = name;
 
-  let contentElement = document.createElement('p');
+  let contentElement = document.createElement('height');
   contentElement.innerText = "Height: " + height;
 
   let imageElement = document.createElement('img');
@@ -133,6 +133,50 @@ pokemonRepository.loadList().then(function () {
     pokemonRepository.addListItem(pokemon);
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
