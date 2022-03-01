@@ -97,8 +97,7 @@ let pokemonRepository = (function() {
     modal.append(imageElement);
     // modal.appendChild(closeButtonElement);
     // modal.appendChild(titleElement);
-    // modal.appendChild(contentElement);
-    modal.append(imageElement);
+    // modal.appendChild(contentElement);;
     // modalContainer.appendChild(modal);
     // modalContainer.classList.add('is-visible');
 

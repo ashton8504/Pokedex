@@ -1,6 +1,8 @@
 <!-- Pokemon Pokedex-->
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
   <head>
     <meta charset="utf-8">
     <title>Pokedex App</title>
@@ -12,28 +14,30 @@
   </head>
 
   <body>
-
     <!-- Bootstrap Navigation Bar -->
-
   <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="#">
       <img src="img/pokemon_logo.png" height="50%" width="50% "alt="Pokemon Logo">
     </a>
+    <form class="form-inline">
+                <input class="form-control mr-sm-2" id="search-pokemon" type="search" placeholder="Search for Pokemon" aria-label="Search for Pokemon">
+    </form>
   </nav>
 
   <div class="list-container">
-      <ul class="pokemon-list"></ul>
+      <ul class="pokemon-list list-unstyled"></ul>
   </div>
 
-    <!--Button Trigger Modal -->
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Pokedex</button> -->
+
+  <!--Button Trigger Modal -->
+  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Pokedex</button> -->
 
 <!-- Bootstrap Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Pokedex</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -44,14 +48,7 @@
       </div>
     </div>
   </div>
-    <!-- <button id="show-modal">Show Model</button>
-    <div id="modal-container">
-       <div class="modal">
-       <button class='modal-close'>Close</button>
-    <h1>Pokedex</h1>
 
-       </div>
-     </div>-->
 
 
 <!-- JS Bootstrap Links -->
