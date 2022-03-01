@@ -1,6 +1,6 @@
 //IIFE setup section
 
-let pokemonRepository = (function() {
+let pokemonRepository = (function() { 
   let modalContainer = document.querySelector('#modal-container');
   let pokemonList = [];
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
