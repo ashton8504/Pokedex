@@ -3,7 +3,7 @@
 let pokemonRepository = (function() { //This is anonymous since there is nothing in the ()
   // let modalContainer = document.querySelector('#modal-container');
   let pokemonList = [];
-  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150'; //API source where we get the pokemon info
 
   function add(pokemon) { //this function will add the value pokemon to the pokemonList with the push function
    pokemonList.push(pokemon);
@@ -75,7 +75,6 @@ let pokemonRepository = (function() { //This is anonymous since there is nothing
 
     let nameElement = $("<h1>" + item.name + "</h1>");
     let imageElementFront = $('<img class="modal-img" style="width:50%">');
-    imgElementFront.attr("src", item.imageUrlFront);
     let imageElementBack = $('<img class="modal-img" style="width:50%">');
     let heightElement =$("<p>" + "Height : " + item.height + "</p>");
     let weightElement = $("<p>" + "Weight : " + item.weight + "</p>");
@@ -93,11 +92,11 @@ let pokemonRepository = (function() { //This is anonymous since there is nothing
     modalBody.append(weightElement);
     modalBody.append(typesElement);
     modalBody.append(abilitiesElement);
-    modal.append(imageElement);
-    modal.appendChild(closeButtonElement);
-    modal.appendChild(titleElement);
-    modal.appendChild(contentElement);;
-    modalContainer.appendChild(modal);
+    // modal.append(imageElement);
+    // modal.appendChild(closeButtonElement);
+    // modal.appendChild(titleElement);
+    // modal.appendChild(contentElement);;
+    // modalContainer.appendChild(modal);
     // modalContainer.classList.add('is-visible');
 }
   return {
@@ -115,4 +114,3 @@ pokemonRepository.loadList().then(function () {
     pokemonRepository.addListItem(pokemon);
   });
 });
- 
