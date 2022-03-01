@@ -3,37 +3,37 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title>Pokedex App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pokedex</title>
-  <!-- Adding Bootstrap before styles.css-->
+    <link rel="shortcut icon" href="img/ball-32x32.png" type="image/x-icon">
+ <!-- Adding Bootstrap before styles.css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <title>Pokedex App </title>
   </head>
 
   <body>
 
     <!-- Bootstrap Navigation Bar -->
-    <header>
-      <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-      <img src="img/pokemon_logo.png" alt="Pokemon Logo">
-    </header>
-    </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="img/pokemon_logo.png" height="50%" width="50% "alt="Pokemon Logo">
+    </a>
+  </nav>
+
+  <div class="list-container">
+      <ul class="pokemon-list"></ul>
+  </div>
 
     <!--Button Trigger Modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Pokedex</button>
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Pokedex</button> -->
 
 <!-- Bootstrap Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Pokedex</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -41,7 +41,6 @@
       <div class="modal-body">
         ...
       </div>
-      <div class="modal-footer">
       </div>
     </div>
   </div>
@@ -52,9 +51,8 @@
     <h1>Pokedex</h1>
 
        </div>
-       </div>
+     </div>-->
 
-    <ul class="pokemon-list"></ul> -->
 
 <!-- JS Bootstrap Links -->
 <!--jQuery first, then Popper.js, then Bootstrap JS-->
