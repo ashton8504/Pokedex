@@ -69,12 +69,90 @@ let pokemonRepository = (function() { //This is anonymous since there is nothing
     });
   }
 
-//Bootstrap Modal?//
+
+
+  //   function showDetails(pokemon) {
+  //     loadDetails(pokemon).then(function () {
+  //       showModal(pokemon.name, pokemon.height, pokemon.imageUrl);
+  //     });
+  //   }
+  //
+  //   function showModal(name, height, image) {
+  //   let modalContainer = document.querySelector('#modal-container');
+  //   modalContainer.innerHTML = '';
+  //   let modal = document.createElement('div');
+  //   modal.classList.add('modal');
+  //
+  //
+  //   let closeButtonElement = document.createElement('button');
+  //   closeButtonElement.classList.add('modal-close');
+  //   closeButtonElement.innerText = 'Close';
+  //   closeButtonElement.addEventListener('click', hideModal);
+  //
+  //   let titleElement = document.createElement('name');
+  //   titleElement.innerText = name;
+  //
+  //   let contentElement = document.createElement('height');
+  //   contentElement.innerText = "Height: " + height;
+  //
+  //   let imageElement = document.createElement('img');
+  //   imageElement.classList.add('pokemon-image-class');
+  //   imageElement.src = image;
+  //
+  //
+  //   modal.appendChild(closeButtonElement);
+  //   modal.appendChild(titleElement);
+  //   modal.appendChild(contentElement);
+  //   modal.appendChild(imageElement);
+  //   modalContainer.appendChild(modal);
+  //   modalContainer.classList.add('is-visible');
+  // }
+  //
+  //   function hideModal() {
+  //     modalContainer.classList.remove('is-visible');
+  //   }
+  //
+  //   document.querySelector('#show-modal').addEventListener('click', () => {
+  //     showModal('Test');
+  //   });
+  //
+  //   window.addEventListener('keydown', (e) => {
+  //     if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
+  //       hideModal();
+  //     }
+  //   });
+  //
+  //   modalContainer.addEventListener('click', (e) => {
+  //     let target = e.target;
+  //     if (target === modalContainer) {
+  //       hideModal();
+  //     }
+  //   });
+  //
+  //   return {
+  //     add: add,
+  //     getAll: getAll,
+  //     addListItem: addListItem,
+  //     loadList: loadList,
+  //     loadDetails: loadDetails,
+  //     showDetails: showDetails
+  //   };
+  // })();
+  //
+  // pokemonRepository.loadList().then(function () {
+  //   pokemonRepository.getAll().forEach(function (pokemon) {
+  //     pokemonRepository.addListItem(pokemon);
+  //   });
+  // });
+  //
+  //
+
+// //Bootstrap Modal?//
   function showModal(pokemon) {
     let modalBody = $(".modal-body"); //modalBody calling bootstrap div class in html
     let modalTitle = $(".modal-title");//modalTitle calling bootstrap div class in html
     let modalHeader = $(".modal-header");//modalHeader calling bootstrap div class in html
-
+    // let myModalInformation = $("#pokemonModal").modal('show');
     modalTitle.empty();//clears the modalTitle after you click out
     modalBody.empty();//clears the modalBody after you click out
 
@@ -88,8 +166,9 @@ let pokemonRepository = (function() { //This is anonymous since there is nothing
 
     let heightElement =$("<p>" + "Height : " + pokemon.height + "</p>");//pokemon height element
     let weightElement = $("<p>" + "Weight : " + pokemon.weight + "</p>");//pokemon weight element
-    let typesElement = $("<p>" + "Types : " + pokemon.types + "</p>"); //pokemon type element
-    let abilitiesElement = $("<p>" + "Abilities : " + pokemon.abilities + "</p>");//pokemon abilities element
+    // let typesElement = $("<p>" + "Types : " + pokemon.types + "</p>"); //pokemon type element
+    // let abilitiesElement = $("<p>" + "Abilities : " + pokemon.abilities + "</p>");//pokemon abilities element
+    let myModalInformation = $("#pokemonModal").modal('show');
 
 
 
