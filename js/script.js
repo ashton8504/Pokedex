@@ -157,6 +157,7 @@ let pokemonRepository = (function() { //This is anonymous since there is nothing
     modalBody.empty();//clears the modalBody after you click out
 
     let nameElement = $("<h1>" + pokemon.name + "</h1>"); //pokemon name element
+    console.log(pokemon, 'lol')
 
     let imageElementFront = $('<img class="modal-img" style="width:50%">'); //pokemon image element
     imageElementFront.attr("src", pokemon.imageUrlFront)
@@ -179,8 +180,8 @@ let pokemonRepository = (function() { //This is anonymous since there is nothing
     modalBody.append(imageElementBack);
     modalBody.append(heightElement);
     modalBody.append(weightElement);
-    modalBody.append(typesElement);
-    modalBody.append(abilitiesElement);
+    // modalBody.append(typesElement);
+    // modalBody.append(abilitiesElement);
 }
   return {
     add: add,
