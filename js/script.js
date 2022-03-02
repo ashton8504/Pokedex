@@ -8,6 +8,8 @@ let pokemonRepository = (function() { //This is anonymous since there is nothing
   function add(pokemon) { //this function will add the value pokemon to the pokemonList with the push function
    pokemonList.push(pokemon);
   }
+
+
   //This returns all data from Pokemon List//
   function getAll() {
     return pokemonList;
@@ -73,13 +75,13 @@ let pokemonRepository = (function() { //This is anonymous since there is nothing
     modalTitle.empty();//clears the modalTitle after you click out
     modalBody.empty();//clears the modalBody after you click out
 
-    let nameElement = $("<h1>" + item.name + "</h1>");
-    let imageElementFront = $('<img class="modal-img" style="width:50%">');
-    let imageElementBack = $('<img class="modal-img" style="width:50%">');
-    let heightElement =$("<p>" + "Height : " + item.height + "</p>");
-    let weightElement = $("<p>" + "Weight : " + item.weight + "</p>");
-    let typesElement = $("<p>" + "Types : " + item.types + "</p>");
-    let abilitiesElement = $("<p>" + "Abilities : " + item.abilities + "</p>");
+    let nameElement = $("<h1>" + item.name + "</h1>"); //pokemon name element
+    let imageElementFront = $('<img class="modal-img" style="width:50%">'); //pokemon image element
+    let imageElementBack = $('<img class="modal-img" style="width:50%">');//pokemon image element
+    let heightElement =$("<p>" + "Height : " + item.height + "</p>");//pokemon height element
+    let weightElement = $("<p>" + "Weight : " + item.weight + "</p>");//pokemon weight element
+    let typesElement = $("<p>" + "Types : " + item.types + "</p>"); //pokemon type element
+    let abilitiesElement = $("<p>" + "Abilities : " + item.abilities + "</p>");//pokemon abilities element
 
 
 
