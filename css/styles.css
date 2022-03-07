@@ -3,79 +3,52 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* #modal-container {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); */
+header {
+ font-size: 100px;
+ padding: 10px;
+ text-align: center;
+}
 
-  /* to show it above other content */
-  /* z-index: 999;
-
-  /* to allow scrolling if the screen is not high enough*/
-  /* overflow: auto; */
-
-  /* this is used to center the modal */
-  /* display: grid;
+.list-container{
   text-align: center;
+  font-weight: bold;
 }
 
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 15px;
-  width: 100%;
-  max-width: 700px;
-  text-align: left;
+body {
+ background-color: #FFCB05;
 }
 
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #777;
-  text-decoration: underline;
+.pokemon-modal-image {
+ width: 100%;
 }
-
-.modal h1 {
-  margin-top: 0;
-} */
-/*
-.modal p {
-  margin-bottom: 0;
-} */
-/*
-#modal-container {
-  display: none;
-} */
-
-/* #modal-container.is-visible { */
-  /*CSS for modal container - add your own desired CSS styles here */
-  /* display: block;
-} */
 
 .button-class {
   /* changes the button elements of the pokemon */
-  background-color: #3c78d8;
-  border: none;
-  color: white;
+  background-color: red;
+  border-radius: 12px;
   padding: 16px 32px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s;
-  /transition-duration: 0.4s;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: Bold;
+  margin: 10px;
+  min-width: 200px;
   cursor: pointer;
-  background-color: white;
+  background-color: #3D7DCA;
+  border: 2px;
+}
+
+.button-class:hover {background-color: #003A70;}
+
+.button-class:active {
+  background-color: #3D7DCA;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.modal-open{
+  text-transform: capitalize;
   color: black;
-  border: 2px solid #3c78d8;
+  text-align: center;
+  font-size: 20px;
 }

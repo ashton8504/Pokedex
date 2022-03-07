@@ -87,8 +87,8 @@ let pokemonRepository = (function() { //This is anonymous since there is nothing
 
     let heightElement =$("<p>" + "Height : " + pokemon.height + "</p>");//pokemon height element
     let weightElement = $("<p>" + "Weight : " + pokemon.weight + "</p>");//pokemon weight element
-    // let typesElement = $("<p>" + "Types : " + pokemon.types + "</p>"); //pokemon type element
-    // let abilitiesElement = $("<p>" + "Abilities : " + pokemon.abilities + "</p>");//pokemon abilities element
+    let typesElement = $("<p>" + "Types : " + pokemon.types + "</p>"); //pokemon type element
+    let abilitiesElement = $("<p>" + "Abilities : " + pokemon.abilities + "</p>");//pokemon abilities element
     let myModalInformation = $("#pokemonModal").modal('show');
 
 
