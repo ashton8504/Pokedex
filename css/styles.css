@@ -22,14 +22,16 @@ body {
  width: 100%;
 }
 
+.bg-light {
+  background-color: purple;
+}
 .button-class {
   /* changes the button elements of the pokemon */
-  background-color: red;
   border-radius: 12px;
   padding: 16px 32px;
   text-align: center;
   text-transform: capitalize;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: Bold;
   margin: 10px;
   min-width: 200px;
@@ -38,7 +40,11 @@ body {
   border: 2px;
 }
 
-.button-class:hover {background-color: #003A70;}
+.button-class:hover {
+  background-color: #003A70;
+  transition: .3;
+}
+
 
 .button-class:active {
   background-color: #3D7DCA;
