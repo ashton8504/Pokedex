@@ -5,8 +5,6 @@ body {
 }
 
 header {
- font-size: 100px;
- padding: 10px;
  text-align: center;
 }
 
@@ -24,8 +22,9 @@ footer {
 }
 
 .bg-light {
-  background-color: purple;
+background-color: #FFCB05!important;
 }
+
 .button-class {
   /* changes the button elements of the pokemon */
   border-radius: 12px;
