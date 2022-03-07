@@ -12,6 +12,10 @@ footer {
  background-size: cover;
 }
 
+/* h1{
+  text-align: center;
+} */
+
 .list-container{
   text-align: center;
   font-weight: bold;
@@ -23,6 +27,7 @@ footer {
 
 .bg-light {
 background-color: #FFCB05!important;
+text-align: left;
 }
 
 .button-class {
