@@ -1,6 +1,7 @@
 html,
 body {
   font-family: Arial, sans-serif;
+  background-color: #FFCB05;
 }
 
 header {
@@ -9,13 +10,13 @@ header {
  text-align: center;
 }
 
+footer {
+ background-size: cover;
+}
+
 .list-container{
   text-align: center;
   font-weight: bold;
-}
-
-body {
- background-color: #FFCB05;
 }
 
 .pokemon-modal-image {
@@ -42,9 +43,7 @@ body {
 
 .button-class:hover {
   background-color: #003A70;
-  transition: .3;
 }
-
 
 .button-class:active {
   background-color: #3D7DCA;
