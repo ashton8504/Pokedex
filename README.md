@@ -1,13 +1,9 @@
 # A Pokedex for Gen 1 Pokemon
 
-<<<<<<< HEAD
-Pokedex is an app which lists over 150 different Pokemons(Gen 1).
+Project was built with HTML, CSS and JavaScript.
 
-App has been developed using:
-=======
-Pokedex is an app which lists over 150 different Pokemons.
+It utilizes data from a Pokemon API to fetch information and display various attributes and then shows an image of various Pokemon.
 
-App has been developed using:
+This was my first project in CareerFoundry’s Full Stack Web Development program.
 
->>>>>>> 1b35a0b (updating CSS file)
-HTML CSS JavaScript jQuery Bootstrap
+Here is the API that was used to load information for the Pokemon:https://pokeapi.co/api/v2/pokemon/?limit=150
