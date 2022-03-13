@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  position: sticky;
+  position: relative;
   text-align: center;
   align-items: center;
   height: auto;
@@ -34,6 +34,7 @@ footer {
   padding-left: 60px;
   margin: 0 auto;
   height: auto;
+  position: relative;
 }
 
 .list-container {
@@ -41,6 +42,7 @@ footer {
   font-weight: bold;
   padding-left: 200px;
   height: auto;
+  flex-direction: column;
 }
 
 .pokemon-modal-image {

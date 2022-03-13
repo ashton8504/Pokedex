@@ -3,7 +3,7 @@
 let pokemonRepository = (function() { //This is anonymous since there is nothing in the ()
   // let modalContainer = document.querySelector('#modal-container');
   let pokemonList = [];
-  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150'; //API source where we get the pokemon info
+  let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150"; //API source where we get the pokemon info
 
 
   function add(pokemon) { //this function will add the value pokemon to the pokemonList with the push function
@@ -26,7 +26,7 @@ let pokemonRepository = (function() { //This is anonymous since there is nothing
 
     listpokemon.appendChild(button);
     pokemonList.appendChild(listpokemon);
-    button.addEventListener("click", function(event) {
+    button.addEventListener("click", function() {
       showDetails(pokemon);
     });
   }
@@ -87,10 +87,11 @@ let pokemonRepository = (function() { //This is anonymous since there is nothing
 
     let heightElement =$("<p>" + "Height : " + pokemon.height + "</p>");//pokemon height element
     let weightElement = $("<p>" + "Weight : " + pokemon.weight + "</p>");//pokemon weight element
-    let typesElement = $("<p>" + "Types : " + pokemon.types + "</p>"); //pokemon type element
-    let abilitiesElement = $("<p>" + "Abilities : " + pokemon.abilities + "</p>");//pokemon abilities element
     let myModalInformation = $("#pokemonModal").modal('show');
-
+    // let typesElement = $("<p>" + "Types : " + pokemon.types + "</p>"); //pokemon type element
+    // let abilitiesElement = $("<p>" + "Abilities : " + pokemon.abilities + "</p>");//pokemon abilities element
+   
+        //ABOVE CODE I LEFT IN TO REVIEW, HAD ISSUES LINKING MORE INFO BUT DIDNT UNDERSTAND WHY//
 
 
 

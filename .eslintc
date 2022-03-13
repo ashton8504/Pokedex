@@ -1,4 +1,4 @@
-//ESLint to the root of the file (project)
+
 {
   "env": {
       "es6": true,
