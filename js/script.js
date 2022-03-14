@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 //IIFE setup section
 
 let pokemonRepository = (function() { //This is anonymous since there is nothing in the ()
@@ -13,7 +14,7 @@ let pokemonRepository = (function() { //This is anonymous since there is nothing
   //This returns all data from Pokemon List//
   function getAll() {
     return pokemonList;
-  };
+  }
 
 //Creates a buttons with Pokemon names
   function addListItem(pokemon) {
@@ -74,28 +75,28 @@ let pokemonRepository = (function() { //This is anonymous since there is nothing
   function showModal(pokemon) {
     let modalBody = $(".modal-body"); //modalBody calling bootstrap div class in html
     let modalTitle = $(".modal-title");//modalTitle calling bootstrap div class in html
-    let pokemon = $("#pokemonModal").modal("show");
-    // let myModalInformation = $("#pokemonModal").modal('show');
     modalTitle.empty();//clears the modalTitle after you click out
     modalBody.empty();//clears the modalBody after you click out
 
     let nameElement = $("<h1>" + pokemon.name + "</h1>"); //pokemon name element
-    let imageElementFront = $("<img class=\"modal-img,\" >"); //pokemon image element
+    let imageElementFront = $("<img class= modal-img, width=50%>"); //pokemon image element
     imageElementFront.attr("src", pokemon.imageUrl)
 
 
-    let heightElement =$("<p>" + "Height : " + pokemon.height + "</p>");//pokemon height element
+
+    let heightElement = $("<p>" + "Height : " + pokemon.height + "</p>");//pokemon height element
     let weightElement = $("<p>" + "Weight : " + pokemon.weight + "</p>");//pokemon weight element
-    // let pokemon1 = $("#pokemonModal").modal("show");
+    pokemon = $("#pokemonModal").modal("show");
     // let typesElement = $("<p>" + "Types : " + pokemon.types + "</p>"); //pokemon type element
     // let abilitiesElement = $("<p>" + "Abilities : " + pokemon.abilities + "</p>");//pokemon abilities element
-   
+
         //ABOVE CODE I LEFT IN TO REVIEW, HAD ISSUES LINKING MORE INFO BUT DIDNT UNDERSTAND WHY//
 
 
 
 //Appending the let functions above, this should display attributes of pokemon & image//
     modalTitle.append(nameElement);
+    modalBody.append(imageElementFront);
     modalBody.append(heightElement);
     modalBody.append(weightElement);
     // modalBody.append(typesElement);

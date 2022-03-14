@@ -8,6 +8,6 @@
       "eslint:recommended"
   ],
   "rules": {
-      "quotes": ["error", "double"]
+      "quotes": ["error", "single"]
   }
 }
